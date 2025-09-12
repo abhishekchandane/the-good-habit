@@ -1,7 +1,11 @@
 import logo from './logo.png';
 
+import hamburger_icon from './hamburger_icon.png';
+import hamburger_icon2 from './hamburger_icon2.png';
+
 import search_icon from './search_icon.png';
 import basket_icon from './basket_icon.png';
+import user_icon from './user_icon.png';
 import cross_icon from './cross_icon.png';
 import add_icon_white from './add_icon_white.png';
 import add_icon_green from './add_icon_green.png';
@@ -23,8 +27,11 @@ import product_menu_5 from './Product_Menu_5.jpg';
 
 export const assets = {
     logo,
+    hamburger_icon,
+    hamburger_icon2,
     search_icon,
     basket_icon,
+    user_icon,
     cross_icon,
     add_icon_white,
     add_icon_green,

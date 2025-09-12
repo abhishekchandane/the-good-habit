@@ -1,81 +1,93 @@
 .header {
-  height: 90vh;
-  background: url("../../../public/header_img.jpg") center/cover no-repeat;
-  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  background-color: #91177f; /* Purple background */
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  color: white;
-  padding: 20px;
-  z-index: 0; /* ensure header stays below popup */
-}
-
-.header::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.4); /* dark overlay for better text contrast */
-  z-index: 1;
+  padding: 40px 80px;
+  box-sizing: border-box;
 }
 
 .header-contents {
-  position: relative;
-  z-index: 2; /* so it appears above overlay but below popup */
-  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
 }
 
-.header-contents h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
+/* Left Section */
+.header-left {
+  flex: 1;
+  color: #fff;
 }
 
-.header-contents .highlight {
-  color: #f74343;
+.header-title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 20px;
 }
 
-.header-contents p {
-  margin: 15px 0;
+.header-subtitle {
   font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #f0f0f0;
   line-height: 1.6;
 }
 
-.header-contents button {
-  padding: 10px 20px;
-  font-size: 1rem;
+.header-btn {
+  background-color: #ffd900; /* Yellow button */
+  color: #000;
+  font-weight: 700;
+  padding: 12px 25px;
   border: none;
   border-radius: 6px;
-  background: #f74343;
-  color: #fff;
   cursor: pointer;
-  transition: background 0.3s ease;
+  font-size: 1rem;
+  transition: 0.3s;
 }
 
-.header-contents button:hover {
-  background: #d62828;
+.header-btn:hover {
+  background-color: #ffb300;
 }
 
-/* ✅ Extra: when popup is open, hide header contents behind */
-.login-popup ~ .app .header-contents {
-  z-index: -1;
-  opacity: 0.3; /* optional fade-out effect */
+/* Right Section */
+.header-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.header-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 60%;
+  object-fit: cover;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
-  .header {
-    height: 70vh;
+  .header-contents {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .header-contents h2 {
-    font-size: 2.2rem;
+  .header-left {
+    margin-bottom: 30px;
   }
 
-  .header-contents p {
+  .header-title {
+    font-size: 2rem;
+  }
+
+  .header-subtitle {
     font-size: 1rem;
   }
 
-  .header-contents button {
-    padding: 12px 28px;
-    font-size: 0.9rem;
+  .header-image {
+    max-width: 300px;
   }
 }

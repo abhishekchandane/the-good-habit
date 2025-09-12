@@ -1,0 +1,124 @@
+/* 🔹 Offer Strip */
+.offer-strip {
+  background-color: #ffd700; /* Lemon yellow */
+  text-align: center;
+  font-weight: 600;
+  padding: 8px 0;
+  font-size: 14px;
+  color: #000;
+  width: 100%;
+}
+
+/* 🔹 Navbar */
+.navbar2 {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: transparent;
+  color: #fff;
+  z-index: 1000;
+}
+
+/* Brand Title */
+.brand-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+/* 🔹 Menu */
+.navbar-menu {
+  display: none; /* default hidden */
+  gap: 30px;
+  list-style: none;
+}
+
+.navbar-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar-menu li a:hover,
+.navbar-menu li a.active {
+  color: #ffd700;
+}
+
+.navbar-menu.show {
+  display: flex; /* show when toggle */
+}
+
+/* 🔹 Right Icons */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-right .icon {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  filter: brightness(0) invert(1);
+  transition: 0.3s;
+}
+
+.navbar-right .icon:hover {
+  transform: scale(1.1);
+  filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(15deg);
+}
+
+/* 🔹 Responsive (Mobile First) */
+@media (max-width: 768px) {
+  .navbar2 {
+    padding: 12px 20px;
+  }
+
+  .brand-title {
+    font-size: 18px;
+  }
+
+  .navbar-menu {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: #9c0288;
+    padding: 20px 0;
+    gap: 15px;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .navbar-right {
+    gap: 15px;
+  }
+
+  .navbar-right .icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* 🔹 Extra Small Screens */
+@media (max-width: 480px) {
+  .navbar2 {
+    padding: 10px 15px;
+  }
+
+  .brand-title {
+    font-size: 16px;
+  }
+
+  .navbar-menu {
+    top: 60px;
+  }
+}
