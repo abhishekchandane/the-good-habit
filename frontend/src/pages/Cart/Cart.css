@@ -99,7 +99,7 @@
 
 .cart-total button {
   width: 100%;
-  background: #ff3b30;
+  background: #ff3773; 
   color: #fff;
   padding: 12px;
   margin-top: 20px;
@@ -112,7 +112,7 @@
 }
 
 .cart-total button:hover {
-  background: #d62828;
+  background: #cd2b5b;
 }
 
 /* Promo Code Section */

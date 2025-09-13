@@ -1,6 +1,6 @@
 /* 🔹 Offer Strip */
 .offer-strip {
-  background-color: #ffd700; /* Lemon yellow */
+  background-color: #f6f656; /* Lemon yellow */
   text-align: center;
   font-weight: 600;
   padding: 8px 0;
@@ -24,17 +24,17 @@
 }
 
 /* 🔹 Navbar */
-.navbar2 {
-    margin-top: 10px;
-  position: absolute;
-  top: 20px;
+.navbar2 { 
+  position: relative;
+  top: 2px;
   left: 0;
   right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
-  background: transparent;
+  /* background: transparent; */
+   background-color: #ff3773;
   color: #fff;
   z-index: 1000;
 }
@@ -85,6 +85,16 @@
   transition: 0.3s;
 }
 
+.navbar-basket-icon .dot{
+    position: absolute;
+    min-width: 09px;
+    min-height: 09px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    top: 15px;
+    right: 81px;
+}
+
 .navbar-right .icon:hover {
   transform: scale(1.1);
   filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(15deg);
@@ -126,6 +136,8 @@
     width: 24px;
     height: 24px;
   }
+
+
 }
 
 /* 🔹 Extra Small Screens */
@@ -146,4 +158,14 @@
   .navbar-menu {
     top: 60px;
   }
+
+    .navbar-basket-icon .dot{
+    position: absolute;
+    min-width: 09px;
+    min-height: 09px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    top: 7px;
+    right: 45px;
+}
 }
